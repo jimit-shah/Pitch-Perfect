@@ -54,6 +54,8 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setButtonsToScaleAspectFit(snailButton, rabbitButton, chipmunkButton,
+                                   vaderButton, echoButton, reverbButton, stopButton)
         setupAudio()
     }
     
@@ -66,7 +68,6 @@ class PlaySoundsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
-        setButtonsToScaleAspectFit(snailButton, rabbitButton, chipmunkButton, vaderButton, echoButton, reverbButton, stopButton)
     }
 
 }
